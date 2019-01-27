@@ -13,9 +13,13 @@ body, input, textarea, button {
 ul {
     padding: 0;
 }
-img, .portfoliolink {
-    width: 20vw;
+#profile, .portfoliolink {
+    width: 25%;
 }
+a img {
+    width: 100%;
+}
+
 h1, h2 {
     font-family: Georgia, Times, 'Times New Roman', serif;
     padding: 0;
@@ -95,8 +99,7 @@ input:focus, textarea:focus {
     outline: #4aaaa5;
 }
 .top-bar-container, .main-content {
-    width: 98vw;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
 }
 .top-bar-container {
@@ -198,22 +201,27 @@ input:focus, textarea:focus {
     
 
 @media screen and (max-width:768px) {
+.main-content, .top-bar-container {
+    width: 95vw;
+}
 
+#profile, .portfoliolink {
+    width: 43%;
+    }
+    input,textarea {
+        font-size: 1.25em;
+    }
 }
     
-
 @media screen and (max-width:640px) {
-    .top-bar-container {
+    .top-bar-container, .name {
         flex-direction: column;
         margin: 0;
-        align-items: space-around;
-    }
-    .name {
         width: 100vw;
         text-align: center;
         box-sizing: border-box;
     }
-    img, .portfoliolink {
+    #profile, .portfoliolink {
         width: 70vw;
         align-self: center;
     }
