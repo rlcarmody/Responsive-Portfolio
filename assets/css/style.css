@@ -227,5 +227,8 @@ input:focus, textarea:focus {
     hr {
         margin: 10px 0;
     }
+    input,textarea {
+        font-size: 1.5em;
+    }
 }
  
