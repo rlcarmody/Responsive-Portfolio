@@ -15,6 +15,7 @@ ul {
 }
 #profile, .portfoliolink {
     width: 25%;
+    min-width: 225px;
 }
 a img {
     width: 100%;
@@ -172,37 +173,27 @@ input:focus, textarea:focus {
     text-align: center;
     padding: 15px 0;
 }
-/* 
-@media (max-width: 608px) {
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        padding: 5px 10px;
-    }
-    .main-content hr {
-        display: none;
-    }
-    .name {
-        padding: 8px;
-        font-size: .6em;
-        margin-right: 2px;
-        max-width: 35%;
-    }
-    form {
-        width: 100%;
-    }
-} */
-@media screen and (max-width:980px) {
 
-}
-    
+@media screen and (max-width:980px) {
+    .top-bar-container {
+        width: 95vw;
+    }
+    .main-content {
+        width: 600px;
+        margin-right: 0;
+        margin-left: 1.5vw;
+      
+        
+    }
+} 
 
 @media screen and (max-width:768px) {
 .main-content, .top-bar-container {
     width: 95vw;
+}
+
+.main-content {
+    margin: 0 auto;
 }
 
 #profile, .portfoliolink {
