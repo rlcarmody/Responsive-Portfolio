@@ -17,6 +17,28 @@ ul {
     width: 25%;
     min-width: 225px;
 }
+
+.portfoliolink {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse {
+    0%     {box-shadow: 4px 4px 10px -2px #4aaaa5, 
+                        -4px -4px 10px -2px #4aaaa5, 
+                        -4px 5px 10px -2px #4aaaa5, 
+                        4px -4px 10px -2px #4aaaa5}
+    50%    {box-shadow: 2px 2px 10px -2px #377F7C, 
+                        -2px -2px 10px -2px #377F7C, 
+                        -2px 2px 10px -2px #4aaaa5, 
+                        2px -2px 10px -2px #4aaaa5}
+    100%   {box-shadow: 4px 4px 10px -2px #4aaaa5, 
+                        -4px -4px 10px -2px #4aaaa5, 
+                        -4px 4px 10px -2px #4aaaa5, 
+                        4px -4px 10px -2px #4aaaa5}
+}
+
 a img {
     width: 100%;
 }
@@ -181,9 +203,10 @@ input:focus, textarea:focus {
     .main-content {
         width: 600px;
         margin-right: 0;
-        margin-left: 1.5vw;
-      
-        
+        margin-left: 2.5vw;
+    }
+    ::-webkit-scrollbar { 
+        display: none; 
     }
 } 
 
